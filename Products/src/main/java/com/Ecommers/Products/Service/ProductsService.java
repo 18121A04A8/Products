@@ -36,6 +36,7 @@ public class ProductsService {
     }
 
     //This method will return all products
+    //git
     public ArrayList<ProductDto> allProducts() {
 
         RestTemplate restTemplate = new RestTemplate();
