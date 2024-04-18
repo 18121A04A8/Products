@@ -25,6 +25,7 @@ public class ProductController {
 
     @GetMapping("")
     public @ResponseBody ArrayList<ProductDto> allProducts(){
+
         return  productsService.allProducts();
     }
 

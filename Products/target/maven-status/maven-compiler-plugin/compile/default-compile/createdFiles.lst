@@ -1,0 +1,5 @@
+com\Ecommers\Products\Controller\UserController.class
+com\Ecommers\Products\Dto\UserDto.class
+com\Ecommers\Products\Repository\UserRepository.class
+com\Ecommers\Products\Models\User.class
+com\Ecommers\Products\Service\UserService.class
