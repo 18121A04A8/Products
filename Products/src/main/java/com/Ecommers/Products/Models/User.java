@@ -1,26 +1,27 @@
 package com.Ecommers.Products.Models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.UUID;
+
 import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Getter
 @Setter
-@Entity(name = "ecomm_User")
+@Entity
+//@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+//@MappedSuperclass
 public class User {
 
     @Id
-    @GeneratedValue(strategy = IDENTITY)
-    private long id;
+    @GeneratedValue
+    private UUID id;
 
     private String name;
-    @Column (name = "email_Adress", unique = true)
+    @Column (name = "email_Address", unique = true)
     private String email;
-
 
 
 }

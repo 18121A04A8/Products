@@ -1,5 +1,9 @@
+com\Ecommers\Products\Models\Learner.class
 com\Ecommers\Products\Controller\UserController.class
 com\Ecommers\Products\Dto\UserDto.class
 com\Ecommers\Products\Repository\UserRepository.class
+com\Ecommers\Products\Models\Instructor.class
 com\Ecommers\Products\Models\User.class
+com\Ecommers\Products\Repository\InstructorRepository.class
 com\Ecommers\Products\Service\UserService.class
+com\Ecommers\Products\Dto\InstructorDto.class
