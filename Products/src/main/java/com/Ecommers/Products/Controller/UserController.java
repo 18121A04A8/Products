@@ -36,9 +36,12 @@ public class UserController {
     }
 
     @GetMapping("/Instructor/{name}")
-    public Instructor getInstructorByName(@PathVariable(name = "name") String name){
+    public List<InstructorDto> getInstructorByName(@PathVariable(name = "name") String name){
         return userService.getInstructorByName(name);
     }
+
+
+
 
 
 

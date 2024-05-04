@@ -1,11 +1,12 @@
 package com.Ecommers.Products.Models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
+import java.util.List;
 import java.util.UUID;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
@@ -17,5 +18,8 @@ import static jakarta.persistence.GenerationType.IDENTITY;
 public class Instructor extends User{
 
     private int salary;
-    private String batch;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "instructor")
+    @Fetch(FetchMode.SUBSELECT)
+    private List<Batch> batch;
 }
